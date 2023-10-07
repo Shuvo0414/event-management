@@ -5,7 +5,7 @@ const Navbar = () => {
   const user = false;
   return (
     <>
-      <div className="  navbar shadow-md  px-8 md:px-10 lg:px-16 p-5 my-10">
+      <div className="navbar shadow-md  px-8 md:px-10 lg:px-16 p-5 my-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -76,7 +76,7 @@ const Navbar = () => {
           <img className=" w-24" src={logo} alt="logo picture" />
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="flex gap-10 px-1">
+          <ul className="flex justify-center items-center gap-10 px-1">
             <li className=" text-sm md:text-lg lg:text-base font-normal">
               <NavLink
                 to="/"
