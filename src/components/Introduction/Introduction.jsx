@@ -11,7 +11,7 @@ const Introduction = () => {
           finding your dream bridal attire to choosing the right photographer
           and planning your dream honeymoon, we bring it all to your fingertips.
         </p>
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-4">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-4  gap-4">
           <div className=" text-center">
             <FaSearch className=" mx-auto border text-5xl font-extrabold mb-4 text-[#FF444A] p-2 "></FaSearch>
             <h1 className=" text-2xl font-normal mb-4">Search Vendor</h1>
@@ -20,7 +20,7 @@ const Introduction = () => {
               place you want to be wedded at isn't an issue with our platform.
             </p>
           </div>
-          <div className=" text-center">
+          <div className=" text-center ">
             <FaClone className=" mx-auto border text-5xl font-extrabold mb-4 text-[#FF444A] p-2 "></FaClone>
             <h1 className=" text-2xl font-normal mb-4">Compare</h1>
             <p className=" text-[#6f6d72] text-xs block ">

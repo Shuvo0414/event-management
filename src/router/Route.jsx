@@ -3,6 +3,7 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 
 const Route = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const Route = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("./weeding.json"),
       },
       {
         path: "/about",
@@ -20,6 +22,10 @@ const Route = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/serviceDetails:id",
+        element: <ServiceDetails></ServiceDetails>,
       },
     ],
   },
