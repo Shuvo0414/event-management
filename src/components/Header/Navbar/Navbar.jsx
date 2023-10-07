@@ -5,7 +5,7 @@ const Navbar = () => {
   const user = false;
   return (
     <>
-      <div className="navbar container mx-auto px-8 md:px-10 lg:px-16 p-5 my-10">
+      <div className="navbar shadow-md  px-8 md:px-10 lg:px-16 p-5 my-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
                     isPending
                       ? "pending "
                       : isActive
-                      ? " text-pink-500 underline font-bold"
+                      ? " text-[#FF444A] underline font-bold"
                       : ""
                   }
                 >
@@ -50,7 +50,7 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? "text-pink-500 underline font-bold"
+                      ? "text-[#FF444A] underline font-bold"
                       : ""
                   }
                 >
@@ -64,7 +64,7 @@ const Navbar = () => {
                     isPending
                       ? "pending"
                       : isActive
-                      ? " text-pink-500 underline font-bold"
+                      ? " text-[#FF444A] underline font-bold"
                       : ""
                   }
                 >
@@ -84,7 +84,7 @@ const Navbar = () => {
                   isPending
                     ? "pending "
                     : isActive
-                    ? " text-pink-500 underline font-bold"
+                    ? " text-[#FF444A] underline font-bold"
                     : ""
                 }
               >
@@ -99,7 +99,7 @@ const Navbar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? " text-pink-500 underline font-bold"
+                    ? " text-[#FF444A] underline font-bold"
                     : ""
                 }
               >
@@ -113,7 +113,7 @@ const Navbar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? " text-pink-500 underline font-bold"
+                    ? " text-[#FF444A] underline font-bold"
                     : ""
                 }
               >
@@ -150,9 +150,7 @@ const Navbar = () => {
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn btn-sm  btn-secondary btn-outline">
-                Login
-              </button>
+              <button className="btn btn-sm   btn-outline">Login</button>
             </Link>
           )}
         </div>
