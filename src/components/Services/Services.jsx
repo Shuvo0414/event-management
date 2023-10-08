@@ -13,7 +13,7 @@ const Services = ({ services }) => {
         catering, and more, we're here to bring your wedding dreams to life
       </p>
       <div className=" container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
-        {services.map((service) => (
+        {services?.map((service) => (
           <ServiceCard key={service.id} service={service}></ServiceCard>
         ))}
       </div>

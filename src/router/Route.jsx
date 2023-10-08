@@ -4,6 +4,8 @@ import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
 
 const Route = createBrowserRouter([
   {
@@ -13,7 +15,7 @@ const Route = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("./weeding.json"),
+        loader: () => fetch("/weeding.json"),
       },
       {
         path: "/about",
@@ -27,6 +29,14 @@ const Route = createBrowserRouter([
         path: "/serviceDetails/:id",
         element: <ServiceDetails></ServiceDetails>,
         loader: () => fetch("/weeding.json"),
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },
