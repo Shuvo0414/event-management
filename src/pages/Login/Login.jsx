@@ -1,15 +1,39 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import GoogleLogin from "./GoogleLogin/GoogleLogin";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Login = () => {
+  const { singIn } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogIn = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    // console.log(email, password);
+
+    singIn(email, password)
+      .then(() => {
+        toast.success("User login successfully");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch(() => {
+        toast.error("Invailed User");
+      });
+  };
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col ">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
+          <h1 className=" text-xl lg:text-5xl font-bold">Please Login Here</h1>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body ">
+          <form onSubmit={handleLogIn} className="card-body ">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -19,7 +43,7 @@ const Login = () => {
                 placeholder="email"
                 name="email"
                 required
-                className="input input-bordered"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#FF444A]"
               />
             </div>
             <div className="form-control">
@@ -27,11 +51,11 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="password"
                 name="password"
                 required
-                className="input input-bordered"
+                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#FF444A]"
               />
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
@@ -40,7 +64,7 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6 p-0">
-              <button className="btn btn-neutral">Login</button>
+              <button className="btn bg-[#FF444A] text-white">Login</button>
             </div>
             <label className="label">
               New here?
