@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const ServiceCard = ({ service }) => {
   const { id, name, image, price, description } = service;
@@ -24,5 +25,7 @@ const ServiceCard = ({ service }) => {
     </>
   );
 };
-
+ServiceCard.propTypes = {
+  service: PropTypes.object,
+};
 export default ServiceCard;

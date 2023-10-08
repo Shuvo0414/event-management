@@ -5,7 +5,7 @@ const Navbar = () => {
   const user = false;
   return (
     <>
-      <div className="navbar shadow-md  px-8 md:px-10 lg:px-16 p-5 my-10">
+      <div className="navbar shadow-md  px-8 md:px-10 lg:px-16 p-5 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

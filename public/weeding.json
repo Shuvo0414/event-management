@@ -6,7 +6,18 @@
     "price": 2000,
     "description": "Find the perfect wedding venue.",
 
-    "detailsDescription": "Our Venue Selection service helps you discover the ideal wedding venue for your special day. We'll provide you with a curated list of venues that match your preferences and budget, making your venue selection process stress-free."
+    "detailsDescription": "Our Venue Selection service helps you discover the ideal wedding venue for your special day. We'll provide you with a curated list of venues that match your preferences and budget, making your venue selection process stress-free.",
+    "additionalDetails": [
+      "Personalized venue recommendations",
+      "Budget-friendly options",
+      "Access to exclusive venues",
+      "Venue tours and consultations"
+    ],
+    "features": [
+      "Personalized venue recommendations",
+      "Budget-friendly options",
+      "Access to exclusive venues"
+    ]
   },
   {
     "id": 2,
@@ -15,7 +26,18 @@
     "price": 1500,
     "description": "Create a magical atmosphere.",
     "detailRoute": "/service/2",
-    "detailsDescription": "Transform your wedding venue into a magical and enchanting space with our Decor and Theme Design service. Our talented designers will work closely with you to bring your dream wedding theme to life, ensuring a captivating and unforgettable atmosphere."
+    "detailsDescription": "Transform your wedding venue into a magical and enchanting space with our Decor and Theme Design service. Our talented designers will work closely with you to bring your dream wedding theme to life, ensuring a captivating and unforgettable atmosphere.",
+    "additionalDetails": [
+      "Customized theme designs",
+      "Floral arrangements",
+      "Lighting and decor setup",
+      "Themed props and accessories"
+    ],
+    "features": [
+      "Customized theme designs",
+      "Floral arrangements",
+      "Lighting and decor setup"
+    ]
   },
   {
     "id": 3,
@@ -24,7 +46,18 @@
     "price": 2500,
     "description": "Delight your guests with delicious food.",
 
-    "detailsDescription": "Our Catering and Menu Planning service is all about culinary excellence. We'll work with you to create a customized menu that caters to your taste and dietary preferences, ensuring that your guests are treated to a memorable dining experience."
+    "detailsDescription": "Our Catering and Menu Planning service is all about culinary excellence. We'll work with you to create a customized menu that caters to your taste and dietary preferences, ensuring that your guests are treated to a memorable dining experience.",
+    "additionalDetails": [
+      "Customized menu planning",
+      "Variety of cuisines",
+      "Professional chefs",
+      "Dietary accommodations"
+    ],
+    "features": [
+      "Customized menu planning",
+      "Variety of cuisines",
+      "Professional chefs"
+    ]
   },
   {
     "id": 4,
@@ -33,7 +66,18 @@
     "price": 1800,
     "description": "Capture your special moments.",
 
-    "detailsDescription": "Preserve the cherished moments of your wedding day with our Photography and Videography service. Our experienced photographers and videographers will capture the emotions, beauty, and candid moments that make your wedding unique."
+    "detailsDescription": "Preserve the cherished moments of your wedding day with our Photography and Videography service. Our experienced photographers and videographers will capture the emotions, beauty, and candid moments that make your wedding unique.",
+    "additionalDetails": [
+      "Full-day coverage",
+      "High-resolution photos and videos",
+      "Photo albums and digital copies",
+      "Engagement and pre-wedding shoots"
+    ],
+    "features": [
+      "Full-day coverage",
+      "High-resolution photos and videos",
+      "Photo albums and digital copies"
+    ]
   },
   {
     "id": 5,
@@ -42,7 +86,18 @@
     "price": 1200,
     "description": "Keep your guests entertained.",
 
-    "detailsDescription": "Ensure your wedding celebration is filled with joy and entertainment with our Entertainment and Music service. From live bands to DJs, we'll help you create the perfect musical backdrop to keep your guests dancing all night."
+    "detailsDescription": "Ensure your wedding celebration is filled with joy and entertainment with our Entertainment and Music service. From live bands to DJs, we'll help you create the perfect musical backdrop to keep your guests dancing all night.",
+    "additionalDetails": [
+      "Live bands and performers",
+      "DJ and sound system setup",
+      "Dance floors and lighting",
+      "Customized playlists"
+    ],
+    "features": [
+      "Live bands and performers",
+      "DJ and sound system setup",
+      "Dance floors and lighting"
+    ]
   },
   {
     "id": 6,
@@ -51,6 +106,17 @@
     "price": 3000,
     "description": "Relax while we handle the details.",
 
-    "detailsDescription": "Sit back, relax, and enjoy your big day while we take care of all the wedding planning and coordination. Our dedicated wedding planner will ensure that everything runs smoothly, from vendor management to timeline creation."
+    "detailsDescription": "Sit back, relax, and enjoy your big day while we take care of all the wedding planning and coordination. Our dedicated wedding planner will ensure that everything runs smoothly, from vendor management to timeline creation.",
+    "additionalDetails": [
+      "Dedicated wedding planner",
+      "Vendor selection and management",
+      "Timeline and schedule planning",
+      "Guest coordination and RSVP management"
+    ],
+    "features": [
+      "Dedicated wedding planner",
+      "Vendor selection and management",
+      "Timeline and schedule planning"
+    ]
   }
 ]

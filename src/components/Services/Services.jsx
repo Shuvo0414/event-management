@@ -1,4 +1,5 @@
 import ServiceCard from "./ServiceCard";
+import PropTypes from "prop-types";
 
 const Services = ({ services }) => {
   return (
@@ -18,6 +19,10 @@ const Services = ({ services }) => {
       </div>
     </div>
   );
+};
+
+Services.propTypes = {
+  services: PropTypes.array,
 };
 
 export default Services;
