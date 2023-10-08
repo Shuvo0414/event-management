@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/Header/Banner/banner";
 import Introduction from "../../components/Introduction/Introduction";
 import Services from "../../components/Services/Services";
+import MakeAnApponintment from "../../components/MakeAnApponintment/MakeAnApponintment";
 
 const Home = () => {
   const services = useLoaderData();
@@ -13,6 +14,7 @@ const Home = () => {
         <Banner></Banner>
         <Introduction></Introduction>
         <Services services={services}></Services>
+        <MakeAnApponintment></MakeAnApponintment>
       </div>
     </div>
   );
