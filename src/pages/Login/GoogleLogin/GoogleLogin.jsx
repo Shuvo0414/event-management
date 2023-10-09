@@ -26,7 +26,7 @@ const GoogleLogin = () => {
       <div className=" flex justify-around items-center">
         <button
           onClick={handleLogin}
-          className="btn btn-sm bg-[#FF444A] text-white"
+          className="btn btn-sm bg-[#FF444A] text-white hover:bg-[#66292b]"
         >
           Google
         </button>

@@ -33,7 +33,7 @@ const MakeAnApponintment = () => {
             cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
             exercitationem quasi.
           </p>
-          <button className="btn bg-[#FF444A] text-white text-xs lg:text-sm">
+          <button className=" p-3 rounded-md hover:bg-[#66292b] bg-[#FF444A] text-white text-xs lg:text-sm">
             Make An Apponintment
           </button>
         </div>
