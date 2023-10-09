@@ -17,7 +17,12 @@ const MakeAnApponintment = () => {
       ></div>
 
       <div className="  h-[40vh] bg-opacity-60"></div>
-      <div className="hero-content text-center text-neutral-content">
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="hero-content text-center text-neutral-content"
+      >
         <div className="lg:w-[880px]">
           <h1 className="mb-5 text-2xl lg:text-4xl font-bold">
             My Wedding Make An Appointment

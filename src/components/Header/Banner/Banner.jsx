@@ -7,7 +7,12 @@ const Banner = () => {
         <img className=" hero h-[70vh] object-cover" src={bannerBg} alt="" />
         <div className="hero-overlay bg-opacity-20"></div>
         <div className="hero-content text-center text-white">
-          <div className="">
+          <div
+            className=""
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <h1 className="mb-5 text-5xl font-bold">
               Create Your Wedding Moments
             </h1>
