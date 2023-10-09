@@ -4,8 +4,6 @@
 
 ## Features and Functionalities
 
-## Features and Functionalities
-
 - **Vendor Search:** Easily search for wedding vendors from around the world, no matter where you're located.
 - **Vendor Comparison:** Compare different vendors to make informed decisions.
 - **Appointment Booking:** Make appointments with vendors for your wedding planning needs.
