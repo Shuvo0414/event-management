@@ -41,7 +41,7 @@ const About = () => {
             <img
               src={company}
               alt="Our Company"
-              className="w-[593px] rounded-lg shadow-lg ml-0 lg:ml-48"
+              className="w-[593px] rounded-lg shadow-lg ml-0 lg:ml-36 "
             />
           </div>
         </div>
@@ -77,30 +77,30 @@ const About = () => {
       </div>
       {/* team section */}
       <div
-        className=" mt-4 text-white mx-auto   lg:flex lg:flex-row lg:justify-center lg:items-center   lg:w-full lg:h-[25vh]  lg:mx-auto  bg-[#c13338]  hidden 
+        className=" mt-4 text-white mx-auto    lg:flex lg:flex-row lg:justify-center lg:items-center   lg:w-full lg:h-[25vh]  lg:mx-auto  bg-[#c13338]  
         "
       >
         <div className="lg:mx-auto">
-          <h1 className=" text-center font-bold text-6xl">1,557</h1>
-          <p className="lg:text-xl lg:font-medium text-center mt-2">
+          <h1 className=" text-center font-bold text-3xl lg:text-6xl">1,557</h1>
+          <p className="text-base lg:text-xl font-medium text-center mt-2">
             Event Mange
           </p>
         </div>
         <div className="lg:mx-auto">
-          <h1 className=" text-center font-bold text-6xl">234</h1>
-          <p className="lg:text-xl lg:font-medium text-center mt-2">
+          <h1 className=" text-3xl text-center font-bold lg:text-6xl">234</h1>
+          <p className="lg:text-xl text-base font-medium text-center mt-2">
             Expert Team
           </p>
         </div>
         <div className="lg:mx-auto">
-          <h1 className=" text-center font-bold text-6xl">16</h1>
-          <p className="lg:text-xl lg:font-medium text-center mt-2">
+          <h1 className=" text-center text-3xl font-bold lg:text-6xl">16</h1>
+          <p className="lg:text-xl text-base font-medium text-center mt-2">
             Satisfied Clients
           </p>
         </div>
         <div className="lg:mx-auto">
-          <h1 className=" text-center font-bold text-6xl">25</h1>
-          <p className="lg:text-xl lg:font-medium text-center mt-2">
+          <h1 className=" text-center text-3xl font-bold lg:text-6xl">25</h1>
+          <p className="lg:text-xl text-base font-medium text-center mt-2">
             Awards Winning
           </p>
         </div>

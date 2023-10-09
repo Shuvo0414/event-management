@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const GoogleLogin = () => {
-  const { name, googleLogin } = useContext(AuthContext);
+  const { googleLogin } = useContext(AuthContext);
   //   console.log(name);
   const location = useLocation();
   const navigate = useNavigate();
@@ -12,6 +12,7 @@ const GoogleLogin = () => {
   const handleLogin = () => {
     googleLogin()
       .then(() => {
+        toast.success("User login successfully");
         navigate(location?.state ? location.state : "/");
       })
       .catch(() => {

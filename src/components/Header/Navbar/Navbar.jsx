@@ -75,7 +75,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <img className=" w-24" src={logo} alt="logo picture" />
+          <div className=" flex justify-center items-center gap-2">
+            <img className=" w-12" src={logo} alt="logo picture" />
+            <h1 className=" font-semibold text-2xl text-[#FF444A]">WEEDING</h1>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex justify-center items-center gap-10 px-1">
@@ -146,7 +149,10 @@ const Navbar = () => {
                   </button>
                 </li>
                 <li>
-                  <button onClick={logOut} className="btn btn-sm btn-secondary">
+                  <button
+                    onClick={logOut}
+                    className="btn btn-sm text-white bg-[#FF444A]"
+                  >
                     Logout
                   </button>
                 </li>

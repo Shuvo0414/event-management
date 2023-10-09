@@ -16,13 +16,18 @@ const Login = () => {
     const password = form.get("password");
     // console.log(email, password);
 
+    if (!email || !password) {
+      toast.error("Please enter both email and password");
+      return;
+    }
+
     singIn(email, password)
       .then(() => {
         toast.success("User login successfully");
         navigate(location?.state ? location.state : "/");
       })
       .catch(() => {
-        toast.error("Invailed User");
+        toast.error("Passwords do not match");
       });
   };
 

@@ -43,6 +43,21 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
+  const updateUserProfile = (obj) => {
+    setLoading(true);
+    return new Promise((resolve, reject) => {
+      updateProfile(auth.currentUser, obj)
+        .then(() => {
+          resolve("Profile updated successfully");
+          setLoading(false);
+        })
+        .catch((error) => {
+          reject(error);
+          setLoading(false);
+        });
+    });
+  };
+
   // user updateProfile
   const userUpdateProfile = (name, photo) => {
     setLoading(true);
@@ -71,6 +86,7 @@ const AuthProvider = ({ children }) => {
     logOut,
     user,
     loading,
+    updateUserProfile,
     name: "shuvo",
   };
 

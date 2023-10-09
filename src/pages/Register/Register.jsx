@@ -6,7 +6,8 @@ import toast from "react-hot-toast";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 const Register = () => {
-  const { creatUser, userUpdateProfile } = useContext(AuthContext);
+  const { creatUser, userUpdateProfile, updateUserProfile } =
+    useContext(AuthContext);
   const navigate = useNavigate();
 
   const [showPassword, setPassword] = useState(false);
@@ -20,7 +21,7 @@ const Register = () => {
     const email = form.get("email");
     const photo = form.get("photo");
     const password = form.get("password");
-    console.log(name, email, photo, password);
+    // console.log(name, email, photo, password);
 
     // password validation
 
@@ -45,7 +46,8 @@ const Register = () => {
       .then(() => {
         userUpdateProfile(name, photo).then(() => {
           toast.success("User created successfully");
-          navigate("/login");
+          navigate("/");
+          updateUserProfile();
         });
       })
       .catch(() => {
