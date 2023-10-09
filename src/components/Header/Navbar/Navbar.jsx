@@ -70,7 +70,7 @@ const Navbar = () => {
                       : ""
                   }
                 >
-                  Contacts
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
@@ -119,7 +119,7 @@ const Navbar = () => {
                     : ""
                 }
               >
-                Contacts
+                Contact Us
               </NavLink>
             </li>
           </ul>
@@ -141,15 +141,12 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <button className="btn btn-sm  btn-Secondary">
+                  <button className="btn btn-sm btn-Secondary">
                     {user.displayName}
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={logOut}
-                    className="btn btn-sm  btn-secondary"
-                  >
+                  <button onClick={logOut} className="btn btn-sm btn-secondary">
                     Logout
                   </button>
                 </li>
@@ -157,7 +154,7 @@ const Navbar = () => {
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn btn-sm   btn-outline">Login</button>
+              <button className="btn btn-sm btn-outline">Login</button>
             </Link>
           )}
         </div>
